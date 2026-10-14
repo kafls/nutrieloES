@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nutrielo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Nutrielo</h1>
+    <p>Conectando alimentos excedentes a quem precisa.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Cadastrar oferta de alimento</h2>
+      <form id="form-oferta">
+        <label>Doador
+          <input type="text" name="doador" required>
+        </label>
+        <label>Alimento
+          <input type="text" name="alimento" required>
+        </label>
+        <label>Quantidade
+          <input type="text" name="quantidade" placeholder="Ex.: 20 kg" required>
+        </label>
+        <label>Validade
+          <input type="date" name="validade" required>
+        </label>
+        <button type="submit">Publicar oferta</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Ofertas disponíveis</h2>
+      <ul id="lista-ofertas"></ul>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
