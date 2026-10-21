@@ -91,7 +91,7 @@ function render() {
     h = `<nav>${nav.concat([['notif', `Avisos (${nn})`]]).map(([k, t]) => `<button class="${S.v == k ? 'on' : ''}" data-a="nav" data-i="${k}">${t}</button>`).join('')}<button class="sair" data-a="sair">Sair</button></nav>`;
     b = u.status != 'aprovado' ? C('Cadastro ' + (u.status == 'pendente' ? 'em análise' : 'rejeitado'), u.status == 'pendente' ? '<p>Você poderá usar a plataforma após a aprovação do administrador.</p>' : `<p>Motivo: ${e(u.motivo)}</p>`) : VIEWS[S.v]()
   }
-  app.innerHTML = `<header><div class="logo"><b>N</b><span>Nutrielo<small>do excedente à mesa</small></span></div>${h}</header><main>${b}</main>`
+  app.innerHTML = `<header><img class="logo" src="img/logo.svg" alt="Nutrielo">${h}</header><main>${b}</main>`
 }
 
 document.addEventListener('submit', ev => {
